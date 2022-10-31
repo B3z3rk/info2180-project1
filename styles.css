@@ -1,11 +1,224 @@
 /* Add your CSS to this file */
+
 body {
+    font-family: -apple-system, BlinkMacSystemFont, "SegoeUI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
     margin: 0;
-    font-size: 16px;
+
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
+    width: 100%;  
+    
+}
+
+/* section .header */
+
+ h1{
+    float: left;
+    font-size: 18px;    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: right;
+}
+
+li a{
+    display:inline-block;
+    padding: 8px;
+    color: #6b7280;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #5a67d8;
+}
+
+.header{
+    background-color: white;
+    
+}
+
+/* section .overview-hero */
+
+.overview-hero-image{
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+
+.overview-hero-text div{
+    float:right;    
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+    padding-block-start: 67px;
+    padding-block-end: 120px;    
+}
+
+/* section .learn-about */
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+    padding-bottom: 10px;    
+}
+
+.cards{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    gap: 15px;  
+    padding-block-start: 15px;
+    padding-block-end: 50px;  
+
+}
+
+.cards .card{
+    background-color:#E2E8F0 ;
+    text-align: center;
+    padding: 15px 8px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #b0b7c4; 
+    padding-bottom: 12px; 
+   
+}
+
+.cards h3{
+    color: #48BB78;
+    font-size: 21px;  
+}
+
+/* section .testing */
+
+.testing{
+    background-color: #4A5568;
+    padding: 30px 0; 
+
+
+}
+
+.testing .container{
+    color: white;   
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.testing .container .cta{
+flex:1;
+display: flex; 
+align-items: center;
+justify-content: center;
+padding: 0px 75px;
+background-color: #48BB78;
+border-radius: 5px;
+cursor: pointer; 
+
+
+}
+
+.testing .container .cta a{
+    color: white;
+    text-decoration:none;
+    
+     
+} 
+
+/* section .stories */
+
+.stories h2{
+    color: #5A67D8;
+    font-size: 18px;
+}
+
+.stories .container a{
+    color: #5A67D8;
+    text-decoration: none;
+    text-align: justify;  
+    
+}
+
+
+.stories img{
+   float: left;
+   padding: 1px ;
+   padding-right: 10px;
+   border-radius: 100%;
+}
+
+/* section .newsletter */
+
+.newsletter {
+    background-color:#48BB78;
+    padding: 3rem 0;
+}
+
+.newsletter .container{
+    color: white;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter .container form{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.newsletter .container form .form-group{
+    width: 100%;
+    flex: 80%;
+}
+
+.newsletter .container form .form-group input{
+    width: 90%;
+    height: 2.5rem;
+    border: none;
+    padding: 0 1rem;
+    border-radius:4px;
+}
+
+.newsletter .container form button{
+    margin-left: 0.3rem;    
+    width: 25%;
+    height: 2.5rem;
+    border: none;
+    padding: 0 1rem;
+    border-radius:4px ;
+    background-color: #5A67D8;
+    color: white;
+    cursor: pointer;
+    flex: 20%;
+}
+
+/* section .footer */
+
+footer {
+    grid-area:footer;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #4A5568;
+}
+
+footer p{
+    color: white;
 }
